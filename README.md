@@ -1,4 +1,4 @@
-# ps_study
+# ProblemSolution_Study
 
 ### 알고리즘 분야별(9가지), Java로 Solution 정리.
 
