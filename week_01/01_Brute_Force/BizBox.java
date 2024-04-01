@@ -19,27 +19,5 @@ public class BizBox {
 			right = Math.max(right, num[i]);
 		}
 
-        int ans = 0;
-        while(left <= right){
-            int mid = (left+right)/2;
-            int sum = 0;
         
-            for(int i=0; i<M; i++){
-                if(num[i] % mid == 0){
-                    sum += num[i]/mid;
-                }else{
-                    sum += num[i]/mid + 1;
-                }
-            }
-            
-            if(sum > N){
-                left = mid+1;
-            }else{
-                right = mid-1;
-                ans = mid;
-            }
-        }
-		sc.close();
-		System.out.println(ans);
-	}
 }
