@@ -14,7 +14,7 @@ A_11728_신현상.java
 ```
 
 
-### Content
+## Content
 
 - **Bruete Force (20문제)**
 - **Sort Application (20문제)**
