@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class C11724 {
+public class Main {
 	static int N, M;
 	static int arr[][];
 	static boolean visit[];
