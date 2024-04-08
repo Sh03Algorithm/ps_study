@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class C2529 {
+public class Main {
 	static int K;
 	static int[] numbers;
 	static char[] arr;
