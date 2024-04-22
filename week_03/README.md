@@ -172,7 +172,7 @@
         <a href="https://www.acmicpc.net/problem/2605">2605</a>
       </td>
       <td>
-        권대현, <a href="https://github.com/Sh03Algorithm/ps_study/blob/main/week_03/B_2605_%EC%A0%95%EB%AF%BC%EA%B5%90.java">정민교</a>)
+        권대현, <a href="https://github.com/Sh03Algorithm/ps_study/blob/main/week_03/B_2605_%EC%A0%95%EB%AF%BC%EA%B5%90.java">정민교</a>
       </td>
     </tr>
     <tr>
