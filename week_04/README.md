@@ -106,7 +106,7 @@
         <a href="https://www.acmicpc.net/problem/2635">2635</a>
       </td>
       <td>
-        백상호, 서세란
+        서세란, 백상호
       </td>
     </tr>
     <tr>
