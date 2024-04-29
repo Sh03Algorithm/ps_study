@@ -29,7 +29,7 @@
         <a href="https://www.acmicpc.net/problem/2564">2564</a>
       </td>
       <td>
-        정민교, 양준성
+        <a href="https://github.com/Sh03Algorithm/ps_study/blob/main/week_04/A_2564_%EC%A0%95%EB%AF%BC%EA%B5%90.java">정민교</a>, 양준성
       </td>
     </tr>
     <tr>
@@ -139,7 +139,7 @@
         <a href="https://www.acmicpc.net/problem/2116">2116</a>
       </td>
       <td>
-        정민교, 권대현
+        <a href="https://github.com/Sh03Algorithm/ps_study/blob/main/week_04/A_2116_%EC%A0%95%EB%AF%BC%EA%B5%90.java">정민교</a>, 권대현
       </td>
     </tr>
     <tr>
