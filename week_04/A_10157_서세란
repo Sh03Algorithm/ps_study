@@ -1,0 +1,46 @@
+package Algorithm;
+
+import java.util.Scanner;
+
+public class Baekjoon10157 {
+	
+	static int dx[] = {0,1,0,-1};
+	static int dy[] = {1,0,-1,0};
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int C = sc.nextInt();
+		int R = sc.nextInt();
+		int K = sc.nextInt();
+		if( K> C*R) {
+			System.out.println(0);
+			return;
+		}
+		else {
+			site(C,R,K);
+		}
+	}
+	
+	public static void site(int c, int r, int k) {
+		int arr[][] = new int[c][r];
+		int x=0, y=0, dir=0; 
+		boolean visit[][] = new boolean[c][r];
+		for(int i=1; i<k; i++) {
+						arr[x][y]= i;
+			visit[x][y]=true;
+			
+			int cangoX = x+dx[dir];
+			int cangoY = y+dy[dir];
+			
+			if(cangoX >=c || cangoY >=r || cangoX < 0 || cangoY < 0 || visit[cangoX][cangoY] == true ) {
+				dir = (dir+1)%4;			//방향전환
+			}
+			
+			x = x + dx[dir];
+			y = y + dy[dir];
+			
+		}
+		System.out.println((x+1) + " " + (y+1));
+	}
+}
