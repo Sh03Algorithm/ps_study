@@ -40,7 +40,7 @@
         <a href="https://www.acmicpc.net/problem/10974">10974</a>
       </td>
       <td>
-        정민교, 양준성
+        권대현현, 양준성
       </td>
     </tr>
     <tr>
@@ -145,7 +145,7 @@
         <a href="https://www.acmicpc.net/problem/2343">2343</a>
       </td>
         <td>
-          권대현, 장현지
+          정민교, 장현지
         </td>
     </tr>
     <tr>
