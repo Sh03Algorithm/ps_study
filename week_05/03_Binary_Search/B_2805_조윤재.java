@@ -23,7 +23,7 @@ public class Main {
 		
 		while(left<=right) {
 			int mid = (left+right)/2;
-			long tree=0;
+			long tree=0;     //long인 이유: 주어지는 나무길이의 정수범위 참고
 			for(int i=0; i<n; i++) {
 				 //나무 자르기
 				if(arr[i]>mid) tree+= arr[i]-mid;
