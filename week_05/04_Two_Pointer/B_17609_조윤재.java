@@ -1,43 +1,43 @@
+import java.util.*;
 import java.io.*;
 
 public class Main {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
-    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    static int result;
-    public static void main(String[] args) throws IOException {
-        int T = Integer.parseInt(br.readLine());
-        for(int tc = 1; tc <= T; tc++) {
-            String str = br.readLine();
-            result = 2;
-            check(str, 0, str.length() - 1, 1);
-            bw.write(result + "\n");
+        // 문자열의 개수를 나타내는 정수 T
+        int T = Integer.parseInt(st.nextToken());
+        // 문자열을담는 배열
+        String[] arr = new String[T];
+        String str = "";
+
+        //문자열 입력받은 후 배열에 저장
+        for (int i = 0; i < T; i++) {
+            str = br.readLine();
+            System.out.println(palindrome(0, str.length()- 1, str, 0));
         }
-        bw.close();
     }
 
-    private static void check(String str, int start, int end, int joker) { 
-        if(start >= end) {
-            if(joker == 1) {
-                result = 0;
-                return;
+    // 로직
+    private static int palindrome(int start, int end, String s, int check) {
+        // 문자 삭제를 2번이상 할 경우 바로 2를 반환
+        if (check >= 2) {
+            return 2;
+        }
+
+        // start 포인터와 end 포인터가 만나거나 지나치기 전까지 반복
+        while (start < end) {
+						// 같을 경우 포인터 한칸 진행
+            if (s.charAt(start) == s.charAt(end)) {
+                start++;
+                end--;
+            } else {
+                // ex) abbab 같은 경우 두 경우를 비교해 더 작은 수를 반환
+                return Math.min(palindrome(start + 1, end, s, check + 1), palindrome(start, end - 1, s, check + 1));
             }
-
-            result = 1;
-            return;
         }
- 
-        if(str.charAt(start) == str.charAt(end)) {
-            check(str, start + 1, end - 1, joker);
-            return;
-        }
- 
-        if(joker == 0) {
-            return;
-        }
- 
-        check(str, start + 1, end, 0);
-        check(str, start, end - 1, 0);
+        return check;
     }
-
 }
